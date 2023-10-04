@@ -92,10 +92,10 @@ class calculator:
         btnproduct = tkinter.Button(text='X', command=lambda: self.presign('*'))
         btnproduct.place(x=160, y=180, width=45, height=40)
 
-        btndivide = tkinter.Button(text='¡Â', command=lambda: self.presign('/'))
+        btndivide = tkinter.Button(text='Â¡Ã‚', command=lambda: self.presign('/'))
         btndivide.place(x=160, y=135, width=45, height=40)
 
-        # special operator
+        # special operator (sine, cos, tan, ln, log, 1/x, x^2...)
         btnsine = tkinter.Button(text='sin', command=lambda: self.special('sin'))
         btnsine.place(x=10, y=45, width=45, height=40)
         
@@ -117,7 +117,7 @@ class calculator:
         btnroot = tkinter.Button(text='sqrt', command=lambda: self.special('sqrt'))
         btnroot.place(x=60, y=90, width=45, height=40)
 
-        btnsquare = tkinter.Button(text='©O', command=lambda: self.special('m2'))
+        btnsquare = tkinter.Button(text='Â©O', command=lambda: self.special('m2'))
         btnsquare.place(x=110, y=90, width=45, height=40)
 
         btnnegative = tkinter.Button(text='+/-', command=lambda: self.special('+/-'))
@@ -126,7 +126,7 @@ class calculator:
         btnclean = tkinter.Button(text='C', command=lambda: self.special('C'))
         btnclean.place(x=210, y=90, width=45, height=40)
 
-        btndel = tkinter.Button(text='¡û', command=lambda: self.special('¡û'))
+        btndel = tkinter.Button(text='Â¡Ã»', command=lambda: self.special('Â¡Ã»'))
         btndel.place(x=210, y=180, width=45, height=40)
 
         btnclear = tkinter.Button(text='CE', command=lambda: self.special('CE'))
@@ -252,7 +252,7 @@ class calculator:
             res = 0
         elif sign == 'CE':
             res = 0
-        elif sign == '¡û':
+        elif sign == 'Â¡Ã»':
             if strs != 'Divisor CANNOT be Zero':
                 if strs != '0':
                     if len(strs) != 1:
