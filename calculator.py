@@ -295,4 +295,4 @@ class calculator:
                     self.numlist.clear()
         self.isequalsign = 1
 
-js = calculator()
+dowork = calculator()
