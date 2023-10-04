@@ -26,7 +26,7 @@ class calculator:
 
         #Call a Layout
         self.show()
-
+        
         self.root.mainloop()
         
     # Layout function
