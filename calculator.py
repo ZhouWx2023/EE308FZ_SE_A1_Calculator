@@ -1,5 +1,4 @@
 # coding=gbk
-
 import tkinter
 import math
 
